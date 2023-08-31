@@ -12,14 +12,7 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post 
-            author="John"
-            content="EXEMPLO CONTENT"
-          />
-          <Post 
-            author="Edward"
-            content="EXEMPLO CONTENT 2"
-          />
+          <Post />
         </main>
       </div>
     </>
