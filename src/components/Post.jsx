@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 export function Post({ author, publishedAt, content }){
   const [comments, setComments] = useState(['Post muito legal, hein!?']);
-  const [newCommentText, setNewCommentText] = useState(['']);
+  const [newCommentText, setNewCommentText] = useState('');
 
   const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'de' yyyy 'às' HH:mm'h'", { locale: ptBr });
   const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, { 
